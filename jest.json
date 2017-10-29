@@ -1,23 +1,15 @@
 {
   "transform": {
-    "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    "^.+\\.jsx?$": "babel-jest"
   },
-  "testRegex": "a.test.tsx",
+  "testRegex": "a.test.js",
   "moduleFileExtensions": [
-    "ts",
-    "tsx",
     "js",
     "jsx"
   ],
   "browser": true,
   "collectCoverage": true,
-  "collectCoverageFrom" : ["src/**/*.{js,jsx,ts,tsx}", "!**/node_modules/**", "!src/**/*.{d.ts}"],
+  "collectCoverageFrom" : ["src/**/*.{js,jsx}", "!**/node_modules/**"],
   "coverageDirectory": "coverage",
-  "moduleDirectories": ["node_modules", "./src"],
-  "globals": {
-    "ts-jest": {
-      "tsConfigFile": "tsconfig.json",
-      "useBabelrc": true
-    }
-  }
+  "moduleDirectories": ["node_modules", "./src"]
 }
