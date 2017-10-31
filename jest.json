@@ -1,7 +1,4 @@
 {
-  "transform": {
-    "^.+\\.jsx?$": "babel-jest"
-  },
   "testRegex": "a.test.js",
   "moduleFileExtensions": [
     "js",
